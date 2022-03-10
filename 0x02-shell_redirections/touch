@@ -1,2 +1,2 @@
-#!bin/nash
-echo 'echo "hello,world "' >> touch 0-hello_world
+#!/bin/bash
+less /etc/passwd 
