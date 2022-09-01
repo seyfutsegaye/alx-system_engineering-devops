@@ -1,0 +1,1 @@
+exersises on shell permissions
