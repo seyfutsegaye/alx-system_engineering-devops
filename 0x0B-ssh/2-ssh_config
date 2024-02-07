@@ -1,9 +1,8 @@
-# This is the ssh client system-wide configuration file.
-# This file provides defaults for users, and the values can be changed
-# in per-user configuration files or on the command line.
-
-
+# Configure ssh client so that you can connect to a server without typing a password.
 Host *
-	PasswordAuthentication no
-#   	HostbasedAuthentication no
-    	IdentityFile ~/.ssh/school
+    SendEnv LANG LC_*
+    HashKnownHosts yes
+    GSSAPIAuthentication yes
+    GSSAPIDelegateCredentials no
+    IdentityFile ~/.ssh/school
+    PasswordAuthentication no
